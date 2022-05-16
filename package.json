@@ -5,13 +5,10 @@
     "main": "index.js",
     "scripts": {
         "dev": "parcel ./*.html",
-
-
-
+        "build": "parcel build --public-url ./ ./*.html ",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
-        "type": "git",
         "url": "git+https://github.com/Melilaura/WEB-taller-1.git"
     },
     "author": "Chane",
