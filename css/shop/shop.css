@@ -1,0 +1,44 @@
+.shop .shop__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop .shop__list .shop__item {
+  color: #FFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 25px 80px 0px;
+}
+
+.shop .shop__list .shop__item .shop__img {
+  height: 170px;
+  cursor: pointer;
+}
+
+.shop .shop__list .shop__item:hover > .shop__img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.shop .shop__list .shop__item .shop__product {
+  font-size: 1em;
+}
+
+.shop .shop__list .shop__item .shop__price {
+  font-family: "Poppins";
+}
+/*# sourceMappingURL=shop.css.map */

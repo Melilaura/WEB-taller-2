@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html {
+  font-family: "Oswald";
+  background-color: black;
+}
+
+body {
+  font-family: "Oswald";
+  background-color: black;
+}
+
+button {
+  font-family: "Oswald";
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  background-color: black;
+  padding: 10px 5px;
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header .nav .logo {
+  margin-right: 20px;
+  color: #FFF;
+  font-size: 20px;
+}
+
+header .nav .logo img {
+  height: 50px;
+}
+
+header .nav .menues .menu__expanded {
+  display: none;
+}
+
+header .nav .menues .menu__item {
+  margin: 0 10px;
+  padding: 5px 10px;
+  position: relative;
+}
+
+header .nav .menues .menu__item a {
+  color: white;
+  text-align: left;
+  font-size: .65em;
+  cursor: pointer;
+}
+
+header .nav .menues .menu__item button {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  font-size: .65em;
+  cursor: pointer;
+}
+
+header .nav .menues .menu__item:hover > .menu__expanded {
+  display: block;
+}
+
+header .nav .menues .menu__expanded {
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+  font-size: 1.5em;
+  text-align: left;
+  padding: 20px;
+  width: 250px;
+}
+
+header .nav .banner__item img {
+  padding: 0px 10px 0px 10px;
+}
+
+header .nav .banner__item button {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+}
+
+header .nav .banner__item button,
+header .nav .banner__item a {
+  font-size: .65em;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.banner {
+  background-color: #ffe512;
+}
+
+.banner .banner__description {
+  padding: 30px;
+}
+
+.banner .banner__description h1 {
+  font-family: "Oswald";
+  font-size: 3em;
+}
+
+.banner .banner__description h3 {
+  font-family: "Poppins";
+  font-size: 0.8em;
+}
+
+.filters {
+  padding: 5px;
+  color: white;
+  font-family: "Poppins";
+  font-size: 0.5em;
+}
+
+.filters .filters__section .filters__for .filter__button {
+  font-family: "Oswald";
+  font-size: 0.8em;
+  background-color: #ffe512;
+  border: none;
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.filters .filters__section .filters__order .filter__button {
+  font-family: "Oswald";
+  font-size: 0.8em;
+  background-color: #ffe512;
+  border: none;
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.shop__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop .shop__title {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  font-size: 1em;
+  color: white;
+  padding: 60px 10px 10px;
+}
+
+.shop .shop__item {
+  color: #FFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 25px 80px 0px;
+}
+
+.shop .shop__item .shop__img {
+  height: 170px;
+  cursor: pointer;
+}
+
+.shop .shop__item:hover > .shop__img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.shop .shop__item .shop__product {
+  font-size: 1em;
+}
+
+.shop .shop__item .shop__price {
+  font-family: "Poppins";
+}
+
+.form_newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.newLetter {
+  background-color: #1b1f26;
+  padding: 60px 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.newsLetter__info h1 {
+  color: white;
+  font-size: 20px;
+}
+
+.newsLetter__info .form_newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsLetter__info .form_newsletter .placeholder {
+  background-color: white;
+  border: none;
+  padding: 8px 10px;
+  font-family: "Poppins";
+  text-align: left;
+  width: 300px;
+  height: 40px;
+  font-size: 0.8em;
+  margin: 10px;
+}
+
+.newsLetter__info .form_newsletter .form__button {
+  font-family: "Oswald";
+  font-size: 0.8em;
+  background-color: #ffe512;
+  border: none;
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 100px 100px 50px;
+}
+
+.footer__info h1 {
+  color: white;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.footer__info a {
+  color: #4f4d4a;
+  padding: 5px 0px;
+}
+
+.footer__info .footer__menu {
+  color: white;
+  width: 150px;
+  margin: 20px;
+  font-family: "Oswald";
+  font-size: 15px;
+}
+
+.footer__info .footer__knowus {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Poppins";
+  font-size: 10px;
+  color: #4f4d4a;
+  width: 150px;
+  margin: 20px;
+}
+
+.footer__info .footer__information {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Poppins";
+  font-size: 10px;
+  color: #4f4d4a;
+  width: 150px;
+  margin: 20px;
+}
+
+.footer__info .footer__corporation {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Poppins";
+  font-size: 10px;
+  color: #4f4d4a;
+  width: 150px;
+  margin: 20px;
+}
+/*# sourceMappingURL=storeStyle.css.map */
