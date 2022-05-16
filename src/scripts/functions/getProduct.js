@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { db } from "../app";
 import { doc, getDoc } from "firebase/firestore";
 
@@ -15,4 +16,23 @@ async function getProduct(id) {
 
 export {
     getProduct,
+=======
+import { db } from "../app";
+import { doc, getDoc } from "firebase/firestore";
+
+async function getProduct(id) {
+    const docRef = doc(db, "products", id);
+    try {
+        const docSnap = await getDoc(docRef);
+        const data = docSnap.data();
+
+        return data;
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+export {
+    getProduct,
+>>>>>>> 74836e1edb4bfcd92dd7c61304ab8eab842b8e66
 }
